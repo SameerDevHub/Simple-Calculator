@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="container-header">
+                <h1>CALCULATOR</h1>
+                <i class="fas fa-sun"></i> <!-- Free solid sun icon -->
+                <i class="fas fa-moon"></i> <!-- Free solid moon icon -->
+            </div>
+            <div class="first-row">
+                <input type="text" name="result" id="display"  placeholder="Result">
+                <input type="button" value="C" id="clear-button" onclick="display.value=''">
+            </div>
+            <div class="second-row">
+                <input type="button" value="1" onclick="livescreen(1)">
+                <input type="button" value="2" onclick="livescreen(2)">
+                <input type="button" value="3" onclick="livescreen(3)">
+                <input type="button" value="+" onclick="livescreen('+')">
+            </div>
+            <div class="third-row">
+                <input type="button" value="4" onclick="livescreen(4)">
+                <input type="button" value="5" onclick="livescreen(5)">
+                <input type="button" value="6" onclick="livescreen(6)">
+                <input type="button" value="-" onclick="livescreen('-')">
+            </div>
+            <div class="fourth-row">
+                <input type="button" value="7" onclick="livescreen(7)">
+                <input type="button" value="8" onclick="livescreen(8)">
+                <input type="button" value="9" onclick="livescreen(9)">
+                <input type="button" value="*" onclick="livescreen('*')">
+            </div>
+            <div class="fifth-row">
+                <input type="button" value="/" onclick="livescreen('/')">
+                <input type="button" value="0" onclick="livescreen(0)">
+                <input type="button" value="." onclick="livescreen('.')">
+                <input type="button" value="=" onclick="Calculate(display.value)">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
